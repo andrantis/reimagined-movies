@@ -1,0 +1,102 @@
+:host {
+  display: flex;
+  width: 696px;
+  height: 240px;
+  background: rgb(232, 235, 238);
+  border: 2px solid rgb(48, 52, 54);
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.movie-poster {
+  min-width: 140px;
+  height: 208px;
+  margin-right: 24px;
+  //   background: rgb(107, 217, 21);
+  border-radius: 8px;
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.movie-content {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-title {
+  height: 18px;
+  color: rgb(48, 52, 54);
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 0;
+  border-bottom: 2px solid rgb(141, 152, 158);
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+}
+
+.movie-rating {
+  border: 1px solid rgb(141, 152, 157);
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(141, 152, 157);
+  font-size: 14px;
+  font-family: Courier;
+  line-height: 18px;
+  padding: 1px 6px;
+}
+
+.movie-duration {
+  height: 19px;
+  color: rgb(48, 52, 54);
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "ArialMT", Arial, sans-serif;
+  margin-left: 16px;
+}
+
+.movie-date {
+  height: 18px;
+  color: rgb(48, 52, 54);
+  font-size: 14px;
+  font-family: Helvetica;
+  line-height: 18px;
+}
+
+.movie-plot {
+  color: rgb(48, 52, 54);
+  font-size: 16px;
+  font-family: Helvetica;
+}
+
+.movie-imdb {
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    font-family: "HelveticaBold", Helvetica, sans-serif;
+    width: 193px;
+    height: 40px;
+    background: rgb(249, 180, 74);
+    border-radius: 4px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

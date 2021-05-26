@@ -1,0 +1,30 @@
+<ng-container *ngIf="movie">
+  <div class="movie-poster">
+    <img
+      src="{{
+        'assets/images/posters/' +
+          movie.Poster.replace('https://m.media-amazon.com/images/M/', '')
+      }}"
+      alt="Poster for {{ movie.Title }}"
+    />
+  </div>
+  <div class="movie-content">
+    <p class="movie-title">{{ movie.Title }}</p>
+    <div class="movie-info">
+      <span class="movie-rating">{{ movie.Rated }}</span>
+      <span class="movie-duration">{{ movie.Runtime }}</span>
+      <span class="spacer"></span>
+      <span class="movie-date">{{ movie.Released }}</span>
+    </div>
+    <p class="movie-plot">{{ movie.Plot }}</p>
+    <div class="spacer"></div>
+    <div class="movie-imdb">
+      <a
+        href="{{ 'https://imdb.com/title/' + movie.imdbID }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >View on IMDB</a
+      >
+    </div>
+  </div>
+</ng-container>

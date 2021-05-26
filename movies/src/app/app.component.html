@@ -1,0 +1,13 @@
+<ng-container *ngIf="movies$ | async as movies">
+  <app-movie-decade-filter
+    class="decade-filter"
+    [movies]="movies"
+    (selectDecade)="onDecadeSelection($event)"
+  ></app-movie-decade-filter>
+  <div class="movies-list">
+    <app-movie-card
+      *ngFor="let movie of movies | byDecade:decade"
+      [movie]="movie"
+    ></app-movie-card>
+  </div>
+</ng-container>

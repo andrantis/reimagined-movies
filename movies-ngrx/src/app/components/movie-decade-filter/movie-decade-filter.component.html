@@ -1,0 +1,9 @@
+<!-- <button class="is-selected">2010's</button> -->
+<button
+  type="button"
+  *ngFor="let decade of decades"
+  (click)="onClick(decade)"
+  [ngClass]="{'is-selected': selected === decade}"
+>
+  {{ decade + "'s" }}
+</button>

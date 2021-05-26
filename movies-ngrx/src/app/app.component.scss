@@ -1,0 +1,17 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 696px;
+    margin: 0 auto;
+  }
+  
+  .decade-filter {
+    margin-bottom: 40px;
+    align-self: flex-end;
+  }
+  
+  .movies-list > * {
+      margin-bottom: 40px;
+  }
+  
+  

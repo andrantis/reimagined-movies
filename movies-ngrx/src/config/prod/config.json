@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "environment": "prod",
+  "omdb": {
+    "url": "http://www.omdbapi.com/",
+    "key": "62f68f21"
+  }
+}

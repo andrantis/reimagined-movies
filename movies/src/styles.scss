@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "WhitneyHTF";
+  src: local("WhitneyHTF"),
+    url(./assets/fonts/WhitneyHTF/Whitney-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "HelveticaBold";
+  src: local("HelveticaBold"),
+    url(./assets/fonts/Helvetica/Helvetica-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "ArialMT";
+  src: local("ArialMT"),
+    url(./assets/fonts/Arial/ArialMT.ttf) format("truetype");
+}
+
+
+.spacer {
+  flex: 1 1 auto;
+}

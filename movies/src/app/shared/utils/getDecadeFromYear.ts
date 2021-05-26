@@ -1,0 +1,1 @@
+export const getDecadeFromYear = (year: number): number => Math.floor(year / 10) * 10;
